@@ -107,6 +107,10 @@ section {
     margin-bottom: 10%;
 }
 
+.main__fotos-verm figure img {
+    height: 220px;
+}
+
 .main__img-caption-red {
     display: block;
     position: absolute;
@@ -213,4 +217,28 @@ footer p {
     padding: 7% 5%;
     background: #2c3e50;
     color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .main__fotos-verm {
+        display: flex;
+    }   
+
+    .main__fotos-verm div {
+        flex-grow: 1;
+    }
+
+    .main__fotos-verm figure img {
+        margin: 5% 1%;
+    }
+
+    .main__foto-artigo {
+        display: flex;
+    }
+
+    .main__article {
+        flex-wrap: wrap;
+        flex-grow: 1;
+        width: 50%;
+    }
 }
